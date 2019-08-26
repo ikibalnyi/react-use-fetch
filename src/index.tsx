@@ -20,7 +20,7 @@ type PopulateReturnType<P, S> =
 
 function populate<P extends object, S extends object = any>(
   fetchData: FetchData<P, S>,
-  getInitialState: GetInitialState<P, S>
+  getInitialState?: GetInitialState<P, S>
 ): PopulateReturnType<P, S> {
   return (WrappedComponent: React.ComponentType<P & S & InjectedPopulateProps<P>>): React.FunctionComponent<P> => {
     return (props: P) => {
