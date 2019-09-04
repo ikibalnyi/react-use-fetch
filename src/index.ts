@@ -38,7 +38,7 @@ type FetchData<S> = (...args: any[]) => Promise<S>;
 type FetchReducer<S, E extends Error> = Reducer<State<S, E>, Action<S, E>>;
 type UseFetchReturnType<S, E extends Error> = State<S,E> & { refetch: FetchData<S> };
 
-const initialState: State<null, null> = {
+const initialState: State<any, any> = {
   isLoading: false,
   data: null,
   error: null,
