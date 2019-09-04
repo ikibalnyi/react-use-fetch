@@ -1,13 +1,13 @@
-# react-populate
+# use-fetch
 
 > A library for populating react components
 
-[![NPM](https://img.shields.io/npm/v/react-populate.svg)](https://www.npmjs.com/package/react-populate) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/use-fetch.svg)](https://www.npmjs.com/package/use-fetch) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save react-populate
+npm install --save use-fetch
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ npm install --save react-populate
 ```tsx
 import * as React from 'react'
 
-import MyComponent from 'react-populate'
+import MyComponent from 'use-fetch'
 
 class Example extends React.Component {
   render () {

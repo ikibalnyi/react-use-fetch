@@ -1,7 +1,13 @@
-import ExampleComponent from './'
+import { renderHook } from "@testing-library/react-hooks";
 
-describe('ExampleComponent', () => {
-  it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
-  })
-})
+import useFetch from "./";
+
+describe('useFetch', () => {
+  it('should return state reference', () => {
+    const mock = jest.fn(() => Promise.resolve('test'));
+    const { result } = renderHook(() => useFetch(mock));
+    const oldState = result.current;
+
+    expect(oldState).toBe(result.current)
+  });
+});

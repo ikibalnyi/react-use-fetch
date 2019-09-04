@@ -1,6 +1,6 @@
 {
-  "name": "react-populate-example",
-  "homepage": "https://ikibalnyi.github.io/react-populate",
+  "name": "use-fetch-example",
+  "homepage": "https://ikibalnyi.github.io/use-fetch",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
@@ -9,7 +9,7 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "^1.1.4",
-    "react-populate": "link:.."
+    "use-fetch": "link:.."
   },
   "scripts": {
     "start": "react-scripts start",

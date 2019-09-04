@@ -1,6 +1,6 @@
 {
-  "short_name": "react-populate",
-  "name": "react-populate",
+  "short_name": "use-fetch",
+  "name": "use-fetch",
   "start_url": "./index.html",
   "display": "standalone",
   "theme_color": "#000000",

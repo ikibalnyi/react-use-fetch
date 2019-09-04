@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import ExampleComponent from 'react-populate'
+import ExampleComponent from 'use-fetch'
 
 export default class App extends Component {
   render () {
