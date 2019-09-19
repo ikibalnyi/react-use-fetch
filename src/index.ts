@@ -44,7 +44,7 @@ const initialState: State<any, any> = {
   error: null,
 };
 
-function useFetch<S = any, E extends Error = Error>
+export function useFetch<S = any, E extends Error = Error>
 (fetchData: FetchData<S>, args?: any): UseFetchReturnType<S, E> {
   const [state, dispatch] = useReducer<FetchReducer<S, E>>(reducer, initialState);
 
