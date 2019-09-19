@@ -1,6 +1,6 @@
 import { Reducer, useEffect, useReducer } from 'react';
 
-interface State<P, E> {
+export interface UseFetchState<P = any, E = any> {
   isLoading: boolean;
   error: null|E;
   data: null|P;
@@ -21,7 +21,7 @@ type Action<P, E> =
   | { type: typeof SUCCESS, payload: P }
   | { type: typeof FAILURE, error: E };
 
-function reducer<P, E>(state: State<P, E>, action: Action<P, E>) {
+function reducer<P, E>(state: UseFetchState<P, E>, action: Action<P, E>) {
   switch (action.type) {
     case REQUEST:
       return { ...state, isLoading: true };
@@ -35,10 +35,10 @@ function reducer<P, E>(state: State<P, E>, action: Action<P, E>) {
 }
 
 type FetchData<S> = (...args: any[]) => Promise<S>;
-type FetchReducer<S, E extends Error> = Reducer<State<S, E>, Action<S, E>>;
-type UseFetchReturnType<S, E extends Error> = State<S,E> & { refetch: FetchData<S> };
+type FetchReducer<S, E extends Error> = Reducer<UseFetchState<S, E>, Action<S, E>>;
+type UseFetchReturnType<S, E extends Error> = UseFetchState<S,E> & { refetch: FetchData<S> };
 
-const initialState: State<any, any> = {
+const initialState: UseFetchState<any, any> = {
   isLoading: false,
   data: null,
   error: null,
