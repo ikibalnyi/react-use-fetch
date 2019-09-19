@@ -20,7 +20,7 @@ import { useFetch } from '@kibatus/react-use-fetch'
 const fetchUser = () => fetch('/api/me')
 
 const MyComponent = ({ isLoading, user, error }) => {
-  const { isLoading, data, error, refetch } = useFetch<User>(fetchUser);
+  const { isLoading, data, error, refetch } = useFetch(fetchUser);
 
   if (isLoading) return 'I\'m loading...';
   if (error) return 'Something went wrong :(';
