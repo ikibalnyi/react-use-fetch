@@ -1,5 +1,64 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
 }
+
+.box {
+  font-size: 0.875rem;
+  display: block;
+  padding: 12px;
+  background-color: #333;
+  border-radius: 4px;
+  color: #fff;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.btn {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-block;
+  outline: 0;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  padding: 6px 16px;
+  font-size: 0.875rem;
+  min-width: 64px;
+  box-sizing: border-box;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+}
+
+.btn.btn-primary {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #90caf9;
+}
+
+.btn.btn-primary:hover {
+  background-color: rgb(100, 141, 174);
+}
+
+.btn.btn-secondary {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #f48fb1;
+}
+
+.btn.btn-secondary:hover {
+  background-color: rgb(170, 100, 123);
+}
+
