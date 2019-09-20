@@ -2,3 +2,17 @@ language: node_js
 node_js:
   - 9
   - 8
+
+cache:
+  directories:
+    - node_modules
+
+script:
+  - npm run test:ci
+
+deploy:
+  provider: npm
+  email: $NPM_USER
+  api_key: $NPM_AUTH_TOKEN
+  on:
+    branch: master
