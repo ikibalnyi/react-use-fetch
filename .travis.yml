@@ -12,6 +12,6 @@ script:
 deploy:
   provider: npm
   email: $NPM_USER
-  api_key: $NPM_AUTH_TOKEN
+  api_key: $NPM_API_KEY
   on:
     tags: true
