@@ -12,8 +12,8 @@ const FAILURE: 'FAILURE' = 'FAILURE';
 
 const fetchActions = {
   request: () => ({ type: REQUEST }),
-  success: <P>(payload: P) => ({ type: REQUEST, payload }),
-  failure: <E>(error: E) => ({ type: REQUEST, error }),
+  success: <P>(payload: P) => ({ type: SUCCESS, payload }),
+  failure: <E>(error: E) => ({ type: FAILURE, error }),
 };
 
 type Action<P, E> =
