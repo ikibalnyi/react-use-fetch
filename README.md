@@ -36,9 +36,10 @@ const MyComponent = ({ isLoading, user, error }) => {
 
 ## API
 
-#### useFetch\<S, E\>(fetchData: (...args: any\[\]) => Promise\<S\> )
+#### useFetch\<S, E\>(fetchData: (...args: any\[\]) => Promise\<S\>, ...args: any[])
  
  - `fetchData` Fetch function that returns a promise.
+ - `...args` Arguments to be passed to fetchData function.
 
  Returns
  `{ data: S, isLoading, boolean, error: E, refetch: (...args: any[]) => Promise<S> }`
