@@ -53,7 +53,3 @@ const MyComponent = ({ isLoading, user, error }) => {
 ## License
 
 MIT © [ikibalnyi](https://github.com/ikibalnyi)
-
----
-
-This hook is created using [create-react-hook](https://github.com/hermanya/create-react-hook).
