@@ -19,18 +19,35 @@ import { useFetch } from '@kibatus/react-use-fetch'
 
 const fetchUser = () => fetch('/api/me')
 
-const MyComponent = ({ isLoading, user, error }) => {
-  const { isLoading, data, error, refetch } = useFetch(fetchUser);
+interface UserData {
+  id: string;
+  name: string;
+}
 
-  if (isLoading) return 'I\'m loading...';
-  if (error) return 'Something went wrong :(';
-  return (
-    <div>
-      {user.id}
-    </div>
-  );
+const MyComponent = ({ isLoading, user, error }) => {
+  const { isLoading, data, error, refetch } = useFetch<UserData>(fetchUser);
+
+  if (isLoading) return <div>I'm loading...</div>;
+  if (error) return <div>Something went wrong :(</div>;
+  return <div>{user.id}</div>;
 };
 ```
+[![Edit react-use-fetch](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/solitary-sea-jem6d?fontsize=14)
+
+## API
+
+#### useFetch\<S, E\>(fetchData: (...args: any\[\]) => Promise\<S\> )
+ 
+ - `fetchData` Fetch function that returns a promise.
+
+ Returns
+ `{ data: S, isLoading, boolean, error: E, refetch: (...args: any[]) => Promise<S> }`
+
+ - `data` The response data object resolved by fetchData function.
+ - `isLoading` Boolean to indicate if request is still loading.
+ - `error` Error object rejected or thrown by fetchData function.
+ - `refetch` Function to make a new request.
+
 
 ## License
 
