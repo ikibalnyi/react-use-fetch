@@ -1,6 +1,6 @@
 {
   "name": "@kibatus/react-use-fetch",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "React hook for fetching data",
   "author": "ikibalnyi",
   "license": "MIT",
