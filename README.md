@@ -1,13 +1,13 @@
-# @kibatus/react-use-fetch
+# react-use-fetch-hook
 
 > React hook for fetching data
 
-[![NPM](https://img.shields.io/npm/v/@kibatus/react-use-fetch.svg)](https://www.npmjs.com/package/@kibatus/react-use-fetch) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/react-use-fetch-hook.svg)](https://www.npmjs.com/package/react-use-fetch-hook) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save @kibatus/react-use-fetch
+npm install --save react-use-fetch-hook
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ npm install --save @kibatus/react-use-fetch
 ```tsx
 import * as React from 'react'
 
-import { useFetch } from '@kibatus/react-use-fetch'
+import { useFetch } from 'react-use-fetch-hook'
 
 const fetchUser = () => fetch('/api/me')
 
