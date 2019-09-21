@@ -994,7 +994,7 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
-"@kibatus/react-use-fetch@link:..":
+"react-use-fetch-hook@link:..":
   version "0.0.0"
   uid ""
 

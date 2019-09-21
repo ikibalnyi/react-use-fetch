@@ -1,6 +1,6 @@
 {
-  "short_name": "@kibatus/react-use-fetch",
-  "name": "@kibatus/react-use-fetch",
+  "short_name": "react-use-fetch-hook",
+  "name": "react-use-fetch-hook",
   "start_url": "./index.html",
   "display": "standalone",
   "theme_color": "#000000",

@@ -1,5 +1,5 @@
 {
-  "name": "@kibatus/react-use-fetch",
+  "name": "react-use-fetch-hook",
   "version": "1.0.7",
   "description": "React hook for fetching data",
   "author": "ikibalnyi",

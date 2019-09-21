@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { useFetch } from '@kibatus/react-use-fetch'
+import { useFetch } from 'react-use-fetch-hook'
 import './App.css';
 
 const  fetchQuote  =  (forceError?: string) => fetch('https://api.quotable.io/random')
