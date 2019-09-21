@@ -3,7 +3,7 @@ import React from 'react'
 import { useFetch } from '@kibatus/react-use-fetch'
 import './App.css';
 
-const  fetchPoll  =  (forceError?: string) => fetch('https://api.quotable.io/random')
+const  fetchQuote  =  (forceError?: string) => fetch('https://api.quotable.io/random')
   .then((response) => {
     if (forceError || !response.ok) {
       return Promise.reject(forceError || response.statusText);
@@ -14,9 +14,7 @@ const  fetchPoll  =  (forceError?: string) => fetch('https://api.quotable.io/ran
   .then(data => data);
 
 const App = () => {
-  const  { data, isLoading, error, refetch } = useFetch(fetchPoll);
-
-  console.log(error);
+  const  { data, isLoading, error, refetch } = useFetch(fetchQuote);
 
   return (
     <div className="App-wrapper box">
