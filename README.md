@@ -24,7 +24,7 @@ interface UserData {
   name: string;
 }
 
-const MyComponent = ({ isLoading, user, error }) => {
+const MyComponent = () => {
   const { isLoading, data, error, refetch } = useFetch<UserData>(fetchUser);
 
   if (isLoading) return <div>I'm loading...</div>;
